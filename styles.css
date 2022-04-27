@@ -1,50 +1,73 @@
 :root {
-    --soft-red: hsl(7, 99%, 70%);
-    --yellow: hsl(51, 100%, 49%);
-    --dark-desaturated-cyan: hsl(167, 40%, 24%);
-    --dark-blue: hsl(198, 62%, 26%);
-    --dark-moderate-cyan: hsl(168, 34%, 41%);
-    --very-dark-desaturated-blue: hsl(212, 27%, 19%);
-    --very-dark-grayish-blue: hsl(213, 9%, 39%);
-    --dark-grayish-blue: hsl(232, 10%, 55%);
-    --grayish-blue: hsl(210, 4%, 67%);
-    --white: hsl(0, 0%, 100%);
+  --soft-red: hsl(7, 99%, 70%);
+  --yellow: hsl(51, 100%, 49%);
+  --dark-desaturated-cyan: hsl(167, 40%, 24%);
+  --dark-blue: hsl(198, 62%, 26%);
+  --dark-moderate-cyan: hsl(168, 34%, 41%);
+  --very-dark-desaturated-blue: hsl(212, 27%, 19%);
+  --very-dark-grayish-blue: hsl(213, 9%, 39%);
+  --dark-grayish-blue: hsl(232, 10%, 55%);
+  --grayish-blue: hsl(210, 4%, 67%);
+  --white: hsl(0, 0%, 100%);
 }
 
 html {
-    font-size: 18px;
+  font-size: 18px;
+}
+
+body {
+  font-family: "Barlow", sans-serif;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    border: solid red 1px;
+  margin: 0;
+  padding: 0;
 }
 
 header {
-    background-image: url("./images/mobile/image-header.jpg");
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-    color: var(--white);
+  background-image: url("./images/mobile/image-header.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+  color: var(--white);
+  height: 525px;
 }
 
 nav {
-    display: flex;
+  display: flex;
+  align-items: center;
+  padding: 20px 20px 0 20px;
 }
 
 .menu {
-    display: none;
+  display: none;
 }
 
+.grow {
+  flex-grow: 1;
+}
+
+.header-title {
+  font-family: "Fraunces", serif;
+  font-size: 2.4rem;
+  text-align: center;
+  padding: 0 20px 0 20px;
+  margin-top: 100px;
+  margin-bottom: 30px;
+}
+.arrow-image {
+  width: 9%;
+  align-self: center;
+}
 
 .attribution {
-    font-size: 11px;
-    text-align: center;
+  font-size: 11px;
+  text-align: center;
 }
 
 .attribution a {
-    color: hsl(228, 45%, 44%);
+  color: hsl(228, 45%, 44%);
 }
