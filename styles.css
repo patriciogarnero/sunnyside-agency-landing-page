@@ -9,6 +9,7 @@
   --dark-grayish-blue: hsl(232, 10%, 55%);
   --grayish-blue: hsl(210, 4%, 67%);
   --white: hsl(0, 0%, 100%);
+  --footer: rgba(144, 212, 197, 255);
 }
 
 html {
@@ -24,7 +25,6 @@ h2,
 h3,
 h4,
 h5,
-h6,
 span {
   font-family: "Fraunces", serif;
 }
@@ -193,7 +193,7 @@ nav {
 }
 
 .testimonial {
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 
 .testimonials img {
@@ -213,11 +213,71 @@ nav {
   color: var(--grayish-blue);
 }
 
+/* Gallery */
+
+.gallery {
+  height: 187px;
+  width: 50%;
+  background-position: center;
+  background-size: 100%;
+}
+
+.gallery-section {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.bottles-bg {
+  background-image: url("./images/mobile/image-gallery-milkbottles.jpg");
+}
+
+.orange-plate-bg {
+  background-image: url("./images/mobile/image-gallery-orange.jpg");
+}
+
+.cone-bg {
+  background-image: url("./images/mobile/image-gallery-cone.jpg");
+}
+
+.sugar-cubes-bg {
+  background-image: url("./images/mobile/image-gallery-sugar-cubes.jpg");
+}
+
+/* ABOUT SECTION */
+
+.about-section {
+  background-color: var(--footer);
+  color: var(--dark-moderate-cyan);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 0 20px 0;
+}
+
+.about-flex {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  width: 80%;
+  margin: 30px 0 60px 0;
+}
+
+svg path {
+  fill: var(--dark-moderate-cyan);
+}
+
+.social-icons {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
+  background-color: var(--footer);
 }
 
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: var(--dark-moderate-cyan);
 }
