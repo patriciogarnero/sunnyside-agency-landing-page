@@ -63,10 +63,10 @@ nav {
 }
 
 .menu {
+  display: none;
   background-color: var(--white);
   color: var(--dark-grayish-blue);
   position: absolute;
-  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
