@@ -46,7 +46,7 @@ li {
 
 header {
   background-image: url("./images/mobile/image-header.jpg");
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   display: flex;
@@ -94,7 +94,7 @@ nav {
   flex-grow: 1;
 }
 
-.center-text {
+.text-align {
   text-align: center;
 }
 
@@ -104,6 +104,7 @@ nav {
   padding: 0 20px 0 20px;
   margin-top: 100px;
   margin-bottom: 30px;
+  text-transform: uppercase;
 }
 .arrow-image {
   width: 9%;
@@ -312,4 +313,112 @@ svg path {
 
 .attribution a {
   color: var(--dark-moderate-cyan);
+}
+
+@media (min-width: 1000px) {
+  /*HEADER SECTION*/
+  header {
+    background-image: url("./images/desktop/image-header.jpg");
+    height: 775px;
+  }
+  .menu-icon {
+    display: none;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: row;
+    background-color: transparent;
+    position: relative;
+    top: 0;
+    right: 0;
+    width: auto;
+    height: auto;
+    color: white;
+  }
+  .menu li {
+    margin-left: 50px;
+  }
+
+  .header-title {
+    letter-spacing: 15px;
+    margin: 75px 0 100px 0;
+  }
+  .arrow-image {
+    width: 30px;
+  }
+
+  /* TRANSFORM SECTION */
+  .section-transform {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .section-flex {
+    width: 50%;
+    display: flex;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .text-align {
+    text-align: left;
+  }
+
+  .bg {
+    width: 50%;
+    height: 550px;
+  }
+
+  .egg-bg {
+    background-image: url("./images/desktop/image-transform.jpg");
+  }
+
+  .section-transform h2,
+  .section-stand-out h2 {
+    margin: 0;
+    font-weight: 900;
+    padding: 0;
+  }
+
+  .section-transform p,
+  .section-stand-out p {
+    padding: 0;
+  }
+  .section-transform span,
+  .section-stand-out span {
+    margin: 30px 0 50px 0;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+  }
+
+  .section-transform span::after {
+    background-color: transparent;
+  }
+
+  .section-stand-out span::after {
+    background-color: transparent;
+  }
+
+  .section-transform span:hover::after {
+    background-color: var(--yellow);
+    cursor: pointer;
+  }
+
+  .section-stand-out span:hover::after {
+    background-color: var(--soft-red);
+    cursor: pointer;
+  }
+
+  /*SECTION STAND OUT*/
+
+  .section-stand-out {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .cup-bg {
+    width: 50%;
+    background-image: url("./images/desktop/image-stand-out.jpg");
+  }
 }
