@@ -185,7 +185,7 @@ nav {
 
 .design-photog-section {
   height: 500px;
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   display: flex;
@@ -355,10 +355,12 @@ svg path {
   }
 
   .section-flex {
+    box-sizing: border-box;
     width: 50%;
     display: flex;
     align-items: flex-start;
     text-align: left;
+    padding: 130px;
   }
 
   .text-align {
@@ -368,6 +370,7 @@ svg path {
   .bg {
     width: 50%;
     height: 550px;
+    background-size: cover;
   }
 
   .egg-bg {
@@ -376,38 +379,44 @@ svg path {
 
   .section-transform h2,
   .section-stand-out h2 {
-    margin: 0;
+    margin: 0 0 30px 0;
     font-weight: 900;
-    padding: 0;
+    font-size: 2rem;
+    padding: 0 50px 0 0;
   }
 
   .section-transform p,
   .section-stand-out p {
     padding: 0;
+    line-height: 1.5;
   }
   .section-transform span,
   .section-stand-out span {
-    margin: 30px 0 50px 0;
+    margin: 50px 0 0 0;
     text-transform: uppercase;
     font-size: 0.8rem;
   }
+  .section-transform span:hover,
+  .section-stand-out span:hover {
+    cursor: pointer;
+  }
 
   .section-transform span::after {
-    background-color: transparent;
+    background-color: var(--yellow);
   }
 
   .section-stand-out span::after {
-    background-color: transparent;
+    background-color: var(--soft-red);
   }
 
   .section-transform span:hover::after {
     background-color: var(--yellow);
-    cursor: pointer;
+    opacity: 0.7;
   }
 
   .section-stand-out span:hover::after {
     background-color: var(--soft-red);
-    cursor: pointer;
+    opacity: 0.7;
   }
 
   /*SECTION STAND OUT*/
@@ -421,4 +430,91 @@ svg path {
     width: 50%;
     background-image: url("./images/desktop/image-stand-out.jpg");
   }
+
+  /*DESIGN AND PHOTOGRAPHY SECTIONS*/
+
+  .graphic-design-photography {
+    display: flex;
+  }
+
+  .design-photog-section {
+    box-sizing: border-box;
+    height: 600px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    width: 50%;
+    padding-bottom: 70px;
+  }
+
+  .graphic-design-photography h3 {
+    font-size: 1.7rem;
+    font-weight: 900;
+  }
+
+  .cherry-bg {
+    background-image: url("./images/desktop/image-graphic-design.jpg");
+  }
+
+  .orange-bg {
+    background-image: url("./images/desktop/image-photography.jpg");
+  }
+
+  .graphic-design-photography p {
+    margin: 30px 0 0 0;
+    padding: 0 150px 0 150px;
+    font-size: 1rem;
+    text-align: center;
+    line-height: 1.5;
+  }
+  /*TESTIMONIALS SECTION*/
+  .testimonials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 100px;
+  }
+  .testimonials-header {
+    color: var(--grayish-blue);
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 150px 0 100px 0;
+  }
+
+  .testimonial {
+    margin-bottom: 50px;
+    width: 27%;
+  }
+
+  .testimonials img {
+    border-radius: 50%;
+    width: 80px;
+  }
+
+  .testimonial p {
+    color: var(--very-dark-grayish-blue);
+    font-size: 1rem;
+    padding: 0 20px;
+    margin: 50px 0 60px 0;
+    text-align: center;
+    line-height: 1.5;
+  }
+
+  .testimonials h5 {
+    font-weight: 900;
+    font-size: 1rem;
+  }
+
+  .testimonials h6 {
+    margin-top: 10px;
+    font-size: 1rem;
+  }
+
+  /*GALLERY*/
 }
