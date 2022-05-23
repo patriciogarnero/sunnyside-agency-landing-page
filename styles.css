@@ -305,6 +305,10 @@ svg path {
   justify-content: space-between;
 }
 
+.social-icons img {
+  cursor: pointer;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -345,7 +349,7 @@ svg path {
     margin: 75px 0 100px 0;
   }
   .arrow-image {
-    width: 30px;
+    width: 40px;
   }
 
   /* TRANSFORM SECTION */
@@ -517,4 +521,59 @@ svg path {
   }
 
   /*GALLERY*/
+  .gallery {
+    height: 440px;
+    width: 25%;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .gallery-section {
+    display: flex;
+  }
+
+  .bottles-bg {
+    background-image: url("./images/desktop/image-gallery-milkbottles.jpg");
+  }
+
+  .orange-plate-bg {
+    background-image: url("./images/desktop/image-gallery-orange.jpg");
+  }
+
+  .cone-bg {
+    background-image: url("./images/desktop/image-gallery-cone.jpg");
+  }
+
+  .sugar-cubes-bg {
+    background-image: url("./images/desktop/image-gallery-sugarcubes.jpg");
+  }
+
+  /*ABOUT SECTION*/
+
+  .about-section {
+    padding: 100px 0 20px 0;
+  }
+
+  .about-section svg {
+    transform: scale(1.8);
+  }
+
+  .about-flex {
+    justify-content: center;
+  }
+
+  .about-flex li {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    padding: 0 20px;
+    font-size: 1.2rem;
+  }
+
+  .social-icons {
+    width: 15%;
+  }
+
+  .attribution {
+    padding-top: 50px;
+  }
 }
