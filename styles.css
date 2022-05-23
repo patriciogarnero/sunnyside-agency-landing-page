@@ -305,8 +305,13 @@ svg path {
   justify-content: space-between;
 }
 
-.social-icons img {
+.social-icons svg {
   cursor: pointer;
+}
+
+.social-icons svg path {
+  transform: scale(0.8);
+  transition: 0.5s;
 }
 
 .attribution {
@@ -325,6 +330,16 @@ svg path {
     background-image: url("./images/desktop/image-header.jpg");
     height: 775px;
   }
+
+  nav {
+    display: flex;
+    align-items: center;
+    padding: 10px 50px 0 50px;
+  }
+
+  nav img {
+    width: 13%;
+  }
   .menu-icon {
     display: none;
   }
@@ -342,6 +357,18 @@ svg path {
   }
   .menu li {
     margin-left: 50px;
+    font-size: 0.8rem;
+  }
+
+  .menu li:last-of-type {
+    background-color: var(--white);
+    font-size: 0.8rem;
+    color: black;
+    transition: 0.5s;
+  }
+
+  .menu li:last-of-type:hover {
+    opacity: 0.6;
   }
 
   .header-title {
@@ -565,11 +592,20 @@ svg path {
     margin-top: 20px;
     margin-bottom: 40px;
     padding: 0 20px;
-    font-size: 1.2rem;
+    font-size: 1rem;
+    transition: 0.5s;
+  }
+
+  .about-flex li:hover {
+    color: var(--white);
   }
 
   .social-icons {
     width: 15%;
+  }
+
+  .social-icons svg path:hover {
+    fill: var(--white);
   }
 
   .attribution {
