@@ -364,7 +364,7 @@ svg path {
     display: flex;
     align-items: flex-start;
     text-align: left;
-    padding: 130px;
+    padding: 5% 9%;
   }
 
   .text-align {
@@ -373,7 +373,7 @@ svg path {
 
   .bg {
     width: 50%;
-    height: 550px;
+    min-height: 550px;
     background-size: cover;
   }
 
@@ -392,7 +392,7 @@ svg path {
   .section-transform p,
   .section-stand-out p {
     padding: 0;
-    line-height: 1.5;
+    line-height: 1.8;
   }
   .section-transform span,
   .section-stand-out span {
@@ -431,7 +431,6 @@ svg path {
   }
 
   .cup-bg {
-    width: 50%;
     background-image: url("./images/desktop/image-stand-out.jpg");
   }
 
