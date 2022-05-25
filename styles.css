@@ -76,6 +76,15 @@ nav {
   height: 350px;
 }
 
+.menu:after {
+  content: " ";
+  position: absolute;
+  top: -20px;
+  right: 0px;
+  border-bottom: 50px solid white;
+  border-left: 50px solid transparent;
+}
+
 .menu li {
   margin: 20px 0;
 }
