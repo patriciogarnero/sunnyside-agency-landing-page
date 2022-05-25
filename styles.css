@@ -349,8 +349,13 @@ svg path {
   nav img {
     width: 13%;
   }
+  
   .menu-icon {
     display: none;
+  }
+  
+    .menu:after {
+    content: none;
   }
 
   .menu {
